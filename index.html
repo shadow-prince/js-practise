@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>KRISH | JS PRACTISE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="theme-color" content="#209CEE">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <!-- Bulma Version 0.9.0-->
+        <link rel='stylesheet prefetch' href='https://unpkg.com/bulma@0.9.0/css/bulma.min.css'>
+        <link rel="stylesheet" href="css/tabs.css">
+        <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar is-info">
+            <div class="navbar-brand">
+             
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-end">
+                    
+                </div>
+            </div>
+        </nav>
+        <section class="hero is-info">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                    Krish
+                    </h1>
+                    <h2 class="subtitle">
+                     JS Practise
+                    </h2>
+                </div>
+            </div>
+            <div class="tabs is-boxed is-centered main-menu" id="nav">
+                <ul>
+                    <li data-target="pane-1" id="1">
+                        <a>
+                            <span class="icon is-small"><i class="fa fa-add"></i></span>
+                            <span>ADD</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-2" id="2" class="is-active">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-empire"></i></span>
+                            <span>Article</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-3" id="3">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+                            <span>Multiplication Table</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-4" id="4">
+                        <a>
+                            <span class="icon is-small"><i class="fa fa-film"></i></span>
+                            <span>More to  conquer</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="pane-1">
+                    <div class="content">
+                        <h1>
+                            ADDITION
+                        </h1>
+                         <tr>
+            <th>
+                First : <input class="input" type="number" id="first" placeholder="Number only">
+            </th>
+            <th>
+                Second : <input class="input" type="number" id="second" placeholder="Number only">
+            </th>
+        </tr>
+    </table>
+    <br>
+    <div class="buttons">
+        <br>
+  <button class="button is-primary" onclick="add()">Add</button>
+</div>
+    <h1 id="answer">
+        
+    </h1>
+                    </div>
+                </div>
+                <div class="tab-pane" id="pane-3">
+                    <div class="columns">
+                        <div class="container">
+                            <div class="columns">
+                                <div class="column">
+                                    <article class="media">
+                                        
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <h1><center>
+                                                    <strong>Multiplication Table!</strong>
+                                                </center>
+                                            </h1>
+                                            <strong>Table of :</strong> <input class="input" type="number" id = "mulA" placeholder="Number only">
+                                            <div class="buttons are-medium">
+                                                  <button onclick="multiplicationTable()" class="button">Get Table</button>
+                                                </div>
+                                            </button>
+                                             <table border="0" cellspacing = 5 bgcolor = WHITE id="product">
+                                                      </table>    
+                                            </table>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                   
+                                </div>
+                                <div class="column">
+                                    <article class="media">
+                                        
+                                    </article>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="pane-4">
+                     <div class="content">
+                        <p style="color:hsl(217, 71%, 53%);font-size:50px;">Done!</p>
+                     <h2>
+                 
+                              <input type="checkbox" checked>
+                              C<br>
+                              <progress class="progress is-primary" value="95" max="100">95%</progress>
+                              <br> 
+
+                              <input type="checkbox" checked>
+                              Python <br>
+                              <progress class="progress is-link" value="98" max="100">30%</progress>
+
+                              <br>
+                              <input type="checkbox"checked>
+                              Django <br>
+                              <progress class="progress is-info" value="70" max="100">45%</progress>
+
+                              <br>
+                              <input type="checkbox"checked>
+                              HTML | CSS <br>
+                              <progress class="progress is-success" value="75" max="100">60%</progress>
+
+                              <br>
+                              <input type="checkbox" checked>
+                              Sqlite<br>
+                              <progress class="progress is-warning" value="70" max="100">75%</progress>
+               
+                    </h2>
+                    <br>
+                    <br>
+                    <p style="color:hsl(348, 100%, 61%);font-size:50px;">Yet To Conque!</p>
+                     <h2> 
+                              <input type="checkbox">
+                              Javascript <br>
+                              <progress class="progress is-small is-primary" max="100">15%</progress>
+                              <br> 
+                          <input type="checkbox">
+                              MongoDB <br>
+                              <progress class="progress is-danger" max="100">30%</progress>
+                              <br>
+                              <input type="checkbox">
+                              Express <br>
+                              <progress class="progress is-medium is-dark" max="100">45%</progress>
+                              <br>
+                            <input type="checkbox">
+                              node.JS <br>
+                              <progress class="progress is-large is-info" max="100">60%</progress>
+                              <br>
+                    </div>
+                </div>
+                <div class="tab-pane is-active" id="pane-2">
+                    <div class="content">
+                        <h1>Hey Guys!</h1>
+                        <p>
+                            This is my personal site to store and run Javascript-practise content
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script src="functions.js"></script>
+    <script src="js/bulma.js"></script>
+    <script src="js/tabs.js"></script>
+</body>
+</html>
