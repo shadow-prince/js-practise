@@ -47,13 +47,13 @@ function darkMode()
 {
     if(even%2==0)
     {
-        //document.getElementById("dark").innerHTML = "Dark Mode";
+        document.getElementById("dark").innerHTML = "Dark Mode";
         document.getElementById("togg").className="hero is-dark  is-bold"
         even+=1;
     }
     else
     {
-        //document.getElementById("dark").innerHTML = "Light Mode";
+        document.getElementById("dark").innerHTML = "Light Mode";
         document.getElementById("togg").className="hero is-warning  is-bold"
         even+=1;
     }
