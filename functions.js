@@ -22,3 +22,14 @@ function multiplicationTable()
         newl.innerHTML += "<tr><td>"+a+" x " + i + " = " + a*i +"</td></tr>"; 
     }
 }
+function subtract()
+{
+    let diff =0;
+    a =Number(document.getElementById("ele1").value);
+    b=Number(document.getElementById("ele2").value);
+    diff=a-b;
+    c = a+ " - " + b +" = "+ diff;
+
+    document.getElementById("difference").innerHTML = c;
+
+}
