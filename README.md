@@ -1,2 +1,2 @@
 # js-practise
- Yet to be Done
+## This repo is to store and test javascripts
