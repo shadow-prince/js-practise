@@ -33,3 +33,12 @@ function subtract()
     document.getElementById("difference").innerHTML = c;
 
 }
+
+var click = 0;
+function clickCounter()
+{
+    click+=1;
+    document.getElementById("CLICKS").innerHTML= "CLICKS : "+click;
+
+
+}
