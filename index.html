@@ -12,20 +12,10 @@
         <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="navbar is-info">
-            <div class="navbar-brand">
-             
-            </div>
-            <div id="navbarExampleTransparentExample" class="navbar-menu">
-                <div class="navbar-end">
-                    
-                </div>
-            </div>
-        </nav>
-        <section class="hero is-info">
+        
+        <section id= "togg" class="hero is-warning  is-bold">
             <div class="hero-body">
-                <div class="container">
-                   
+                <div class="container">                  
                     <span class="icon is-large">
                           <i class="fas fa-user-astronaut fa-4x"></i>
                     </span> 
@@ -36,7 +26,15 @@
                      JS Practise
                     </h2>
                 </div>
+              <nav>
+                <button class="button is-small is-rounded is-focused" onclick="darkMode()">
+    
+                    <a id = "dark">Light Mode</a>
+                  </button>
+              </nav>
+                
             </div>
+            
             <div class="tabs is-boxed is-centered main-menu" id="nav">
                 <ul>
                     <li data-target="pane-1" id="1">
@@ -224,7 +222,7 @@ Second : <input class="input" type="number" id="ele2" placeholder="Number only">
                             <h2>
                                 Click Counter 
                             </h2>
-                            <button class="button is-warning is-large" onclick="clickCounter()">
+                            <button class="button is-focused is-warning is-large" onclick="clickCounter()">
                                 <p id = "CLICKS"> CLICK ME</p>
                             </button>
                             <br>
